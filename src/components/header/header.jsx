@@ -3,7 +3,7 @@ import menu from "../../img/menu_icon.png"
 import './header.css';
 
 
-function Header( {links} ) {
+function Header() {
   return (
     <header className="main-header">
       <div className="header-wrap">
@@ -21,11 +21,14 @@ function Header( {links} ) {
               </i>
             </label>
             <ul className="main-menu">
-              {links.map((link, index) => (
-                <li className="menu-item" key={index}> {/**key para asigar un identificador unico que en este caso seria index */}
-                  <a href={link.url}>{link.text}</a>
+              
+                <li className="menu-item"> {/**key para asigar un identificador unico que en este caso seria index */}
+                  
+                  <a href='/Carta'> Carta</a>
+                  <a href='/Estadisticas'>Estadisticas</a>
+                  <a href='/Pedidos'> Pedidos</a>
                 </li>
-              ))}
+              ))
             </ul>
           </nav>
         </div>

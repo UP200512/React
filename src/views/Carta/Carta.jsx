@@ -1,24 +1,17 @@
 import React from 'react';
 // import './Carta.css';
-import Header from '../../components/header/header';
-import Footer from "../../components/footer/footer";
-import Container from '../../components/Card_container/Card_Container';
+import Header from '../../components/header/header.jsx';
+import Footer from "../../components/footer/footer.jsx";
+import Container from '../../components/Card_container/Card_Container.jsx';
 
 
 function Carta(){
-    const headerLinks = [
-        { url: '/Home', text: 'Pagina Principal' },
-        { url: '/Pedidos', text: 'Pedidos' },
-        { url: '/Estadisticas', text: 'Estadisticas' }
-      
-      ];
-
     return(
-        <div>
-        <Header links={headerLinks}/>
+        <>
+        <Header/>
         <Container/>
         <Footer/>
-    </div>
+    </>
 
     );
 }
