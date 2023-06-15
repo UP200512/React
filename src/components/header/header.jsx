@@ -8,7 +8,7 @@ function Header() {
     <header className="main-header">
       <div className="header-wrap">
         <div className="wrap-logo-header">
-          <a className="logo-header" href="/Home">
+          <a className="logo-header" href="/">
             Crazy Fryer
           </a>
         </div>

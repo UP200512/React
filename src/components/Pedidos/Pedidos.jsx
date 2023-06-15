@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import './Pedidos.css';
+// import "./Pedidos.css";
 
-    
-const Pedidos=()=>{
+const Pedidos = () => {
   const [pedidos, setPedidos] = useState([]);
   const [total, setTotal] = useState(0);
   const [pedidoInput, setPedidoInput] = useState("");
@@ -41,7 +40,9 @@ const Pedidos=()=>{
         />
         <button onClick={agregarPedido}>Agregar</button>
 
-        <h3>Número de órdenes: <span>{total}</span></h3>
+        <h3>
+          Número de órdenes: <span>{total}</span>
+        </h3>
         <ul>
           {pedidos.map((pedido) => (
             <li key={pedido.id}>
@@ -62,7 +63,6 @@ const Pedidos=()=>{
       </section>
     </div>
   );
-  
 };
 
 export default Pedidos;
