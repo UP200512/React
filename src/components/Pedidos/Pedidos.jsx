@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-// import "./Pedidos.css";
+import "./Pedidos.css";
 
 const Pedidos = () => {
   const [pedidos, setPedidos] = useState([]);
   const [total, setTotal] = useState(0);
   const [pedidoInput, setPedidoInput] = useState("");
+  
 
+  
   const agregarPedido = () => {
     if (pedidoInput === "") {
       return;
@@ -39,7 +41,7 @@ const Pedidos = () => {
           onChange={(e) => setPedidoInput(e.target.value)}
         />
         <button onClick={agregarPedido}>Agregar</button>
-
+        
         <h3>
           Número de órdenes: <span>{total}</span>
         </h3>
@@ -60,6 +62,7 @@ const Pedidos = () => {
         <div className="alinear-derecha">
           <input className="boton w-sh-100" type="submit" value="Enviar" />
         </div>
+        
       </section>
     </div>
   );
